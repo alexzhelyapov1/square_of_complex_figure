@@ -64,7 +64,7 @@ double integral (double (* f)(double x), double a, double b, double eps2) {
     } while (fabs(integral_sum_2n - integral_sum_n) > eps2);
     return integral_sum_2n;
 }
-//addkbabs
+
 
 int test_root (double (* root) (double (* f1) (double x), double (* f2) (double x), double x_left, double x_right, double eps1)) {
     int test_errors = 0;
@@ -294,15 +294,15 @@ int main(int argc, char *argv[])
         testik(n);
     }
     if (help + tochki + iteratsii + flagTest == 0) {
-        //double x = 100;
+        // double x = 100;
         // printf ("f = %lg\n", f1 (100.0));
-        //printf ("f = %lg\n", f3 (5.0));
+        // printf ("f = %lg\n", f3 (5.0));
         // printf ("f = %lg\n", f1 (100.0));
-        //printf("%f %f %f", f1(x), f2(x), f3(x));
+        // printf("%f %f %f", f1(x), f2(x), f3(x));
         // printf("root 1 = %f \n", root(f1, f2));
         // printf("integral = %f \n", integral (0, 1, f1));
-        //test_root (root);
-        //test_integral(integral);
+        // test_root (root);
+        // test_integral(integral);
         printf ("Square = %lg\n", square_of_figure (f1, f2, f3));
     }
     return 0;
